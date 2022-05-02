@@ -1,0 +1,16 @@
+{
+  "name": "vendor_name/dweb-tp2-grupo-12",
+  "description": "description",
+  "minimum-stability": "stable",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "Raul",
+      "email": "email@example.com"
+    }
+  ],
+  "require": {
+    "twbs/bootstrap": "^v4.4.1",
+    "components/jquery": "^3"
+  }
+}
