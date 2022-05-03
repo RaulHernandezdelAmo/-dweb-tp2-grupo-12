@@ -1,3 +1,7 @@
+/********/
+/*NavBar*/
+/********/
+
 .navbar{
     background-color: #61890C;
 }
@@ -25,4 +29,78 @@
 .custom-btn:hover {
     background-color: #ffffff; /* Green */
     color: #000000;
+}
+
+
+/**********/
+/* Footer */
+/**********/
+
+.custom-footer {
+    position:absolute;
+    bottom:0;
+    background-color: #292c2f;
+    width: 100%;
+    padding: 45px 50px;
+
+}
+
+.custom-footer .footer-left p {
+    color: #8f9296;
+    font-size: 14px;
+    margin: 0;
+    margin-left: 40px;
+}
+/* Footer links */
+
+.custom-footer p.footer-links a {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0 0 10px;
+    display: inline-block;
+    line-height: 1.8;
+    color: white;
+}
+
+.custom-footer .footer-links a:before {
+    content: "·";
+    font-size: 20px;
+    left: 0;
+    color: #fff;
+    display: inline-block;
+    padding-right: 5px;
+}
+
+.custom-footer .footer-links .link-1:before {
+    content: none;
+}
+
+
+.custom-footer .footer-right {
+    float: right;
+    margin-top: 6px;
+    max-width: 180px;
+}
+
+.custom-footer .footer-right a {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    background-color: #33383b;
+    border-radius: 2px;
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 35px;
+    margin-left: 3px;
+    transition:all .25s;
+}
+
+.custom-footer .footer-right a:hover{
+    transform:scale(1.1);
+    -webkit-transform:scale(1.1);
+}
+
+.custom-footer p.footer-links a:hover{
+    text-decoration:underline;
 }
