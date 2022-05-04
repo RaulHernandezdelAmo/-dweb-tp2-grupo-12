@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>MonkeyLand - Login</title>
+    <title>MonkeyLand - Enclosures</title>
     <link rel="stylesheet" href="../vendor/twbs/bootstrap/dist/css/bootstrap.css">
     <link rel="stylesheet" href="../css/style.css">
 </head>
@@ -18,14 +18,14 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
             <li class="nav-item">
-                <a class="nav-link" href="#">Home</a>
+                <a class="nav-link" href="#">Home
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#">Our Animals</a>
             </li>
 
-            <li class="nav-item">
-                <a class="nav-link" href="#">View Enclosures</a>
+            <li class="nav-item active">
+                <a class="nav-link" href="#">View Enclosures<span class="sr-only">(current)</span></a>
             </li>
         </ul>
         <div class="mav-item">
@@ -39,30 +39,32 @@
     </div>
 </nav>
 
-<div class="container">
-    <div class="login-big-custom-box">
-        <div class="green-custom-box login-green-custom-box">
-            <p style="text-align: center; font-size: 40px;color: white; margin-top: 35px;">Login</p>
-        </div>
-        <div class="login-grey-custom-box">
-            <form>
-                <table style="width: 450px; margin-top: 50px">
 
-                    <tr>
-                        <td style="height: 50px; text-align:center; margin-right: 30px">User: </td>
-                        <td style="height: 50px; text-align:center"><input required type="text" name="user" placeholder="RaulHernandez" style="height: 50px;" ></td>
-                    </tr>
-                    <tr>
-                        <td style="height: 50px; text-align:center">Password: </td>
-                        <td style="height: 50px; text-align:center"><input required type="password" name="password" placeholder="Password" style="height: 50px;" ></td>
-                    </tr>
-                </table>
-                <p style="height: 50px;text-align: center"><input class="btn btn-login-custom" type="submit" value="Login" style="height: 50px;"></p>
-            </form>
-        </div>
+<div class="container">
+    <div class="green-custom-box ">
+        <p style="text-align: center; font-size: 40px;color: white; margin-top: 35px;">Enclosures Management</p>
     </div>
 </div>
 
+<div class="container">
+    <?php for ($i = 1; $i <= 12; $i++) {
+    if (($i - 1) % 4 == 0){
+    if ($i > 1){ ?>
+</div>
+<?php } ?>
+<div class="row">
+    <?php } ?>
+    <div class="card" style="width: 16rem; margin: 1rem auto; border-radius: 25px; text-align: center">
+        <img src="../images/enclosure.jpg" class="card-img-top"
+             style="border-radius: 5% 5% 0% 0%;" alt=""">
+        <div class="card-body">
+            <h4 class="card-title">Enclosure <?php echo $i ?></h4>
+            <a href="#" class="btn-list-custom btn">View Enclosure</a>
+        </div>
+    </div>
+    <?php } ?>
+</div>
+</div>
 
 <footer class="custom-footer">
     <div class="footer-right">
