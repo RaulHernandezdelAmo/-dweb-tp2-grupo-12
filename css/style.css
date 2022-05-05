@@ -159,9 +159,21 @@ body{
 
 .animal-name-custom-box{
     height: 100px;
+    line-height: 90px;
     width: 800px;
     border-radius:12px;
     background-color: #61890C;
+}
+
+.btn-edit-animal-custom{
+    background-color: #9cc636;
+    border-radius: 12px;
+    color: black;
+    border: 2px solid #626262;
+}
+.btn-edit-animal-custom:hover {
+    background-color: #c0ea68;
+    color: #000000;
 }
 
 /**********/
