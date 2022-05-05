@@ -1,3 +1,10 @@
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+
 /********/
 /*NavBar*/
 /********/
@@ -130,17 +137,37 @@
     color: #ffffff;
 }
 
+/**************/
+/*Animal info*/
+/**************/
+
+.custom-animal-img{
+    max-width: 400px;
+    height:auto;
+    background:url("/images/jirafa.JPG");
+    background-size:cover;
+    margin:20px;
+    border-radius: 12px;
+}
+
+.animal-custom-box{
+    height: 600px;
+    width: auto;
+    margin: 20px;
+    border-radius: 12px;
+}
 
 /**********/
 /* Footer */
 /**********/
 
 .custom-footer {
-    position:relative;
+    margin-top: auto;
     bottom:0;
     background-color: #292c2f;
     width: 100%;
     padding: 45px 50px;
+    height: auto;
     min-height: 17.5vh;
 }
 
