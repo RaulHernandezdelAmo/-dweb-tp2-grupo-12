@@ -146,7 +146,7 @@ body{
     height:auto;
     background:url("/images/jirafa.JPG");
     background-size:cover;
-    margin:20px;
+    margin: 20px;
     border-radius: 12px;
 }
 
@@ -155,6 +155,13 @@ body{
     width: auto;
     margin: 20px;
     border-radius: 12px;
+}
+
+.animal-name-custom-box{
+    height: 100px;
+    width: 800px;
+    border-radius:12px;
+    background-color: #61890C;
 }
 
 /**********/
