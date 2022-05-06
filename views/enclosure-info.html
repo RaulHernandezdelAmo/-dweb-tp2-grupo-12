@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MonkeyLand - Animal info</title>
+    <link rel="stylesheet" href="../vendor/twbs/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../css/style.css">
+
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark">
+    <a class="navbar-brand" href="#">
+        <img src="../images/MonkeyLandLogo.png" height="130" class="d-inline-block align-top" alt="">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Our Animals</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="#">View Enclosures</a>
+            </li>
+        </ul>
+        <div class="mav-item">
+            <div class="container" style="position: relative">
+                <button class="btn custom-btn" type="button">
+                    <img src="../images/loginIcon.png" height="30" class="d-inline-block align-top" alt="" style="opacity: 0.6">
+                    Login/Register
+                </button>
+            </div>
+        </div>
+    </div>
+</nav>
+
+
+<div class="container">
+
+    <div class="row mb-2">
+        <div class="col-md-12">
+            <div class="card flex-md-row mb-4 box-shadow h-md-450">
+                <div class="card-body d-flex flex-column align-items-start">
+                    <h3 class="mb-0" style="margin-left: 300px">
+                        <a >001 - Hill</a>
+                    </h3>
+                    <p class="card-text mb-auto" style="margin-left: 50px; font-size: 24px"><br>Location: Zone 13 <br> Biome: Hill</p>
+                    <p class="card-text mb-auto" style="margin-left: 275px"><input class="btn btn-list-custom" type="submit" value="Edit Enclosure info" style="height: 50px;"></p>
+                </div>
+                <img class="card-img-right flex-auto d-none d-md-block" src="../images/enclosure.jpg" alt="..">
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <h3 class="card-header text-center font-weight-bold text-uppercase py-4">
+            Animals
+        </h3>
+        <div class="card-body">
+            <div id="table" class="table-editable">
+                <table class="table table-bordered table-responsive-md table-striped text-center">
+                    <thead>
+                    <tr>
+                        <th class="text-center">ID</th>
+                        <th class="text-center">Name</th>
+                        <th class="text-center">Species</th>
+                        <th class="text-center">Remove</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td class="pt-3-half" contenteditable="true">01</td>
+                        <td class="pt-3-half" contenteditable="true">Julian</td>
+                        <td class="pt-3-half" contenteditable="true">Blue Parrot</td>
+                        <td>
+                            <span class="table-remove">
+                                <button type="button" class="btn btn-danger btn-rounded btn-sm my-0">
+                                    Remove
+                                </button>
+                            </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="pt-3-half" contenteditable="true">05</td>
+                        <td class="pt-3-half" contenteditable="true">Matilda</td>
+                        <td class="pt-3-half" contenteditable="true">Red Parrot</td>
+                        <td>
+                            <span class="table-remove">
+                                <button type="button" class="btn btn-danger btn-rounded btn-sm my-0">
+                                    Remove
+                                </button>
+                            </span>
+                        </td>
+                    </tr>
+                    <tr>
+
+                        <td class="pt-3-half" contenteditable="true"><form id="form"><input type="hidden" name="id" value="1" /></form></td>
+                        <td class="pt-3-half"><input form="form" type="text" name="name" value="Name" /></td>
+                        <td class="pt-3-half"><input form="form" type="text" name="name" value="Name" /></td>
+                        <td><input form="form" type="submit" value="Save" />
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+    </div>
+
+
+</div>
+
+<footer class="custom-footer">
+    <div class="footer-right">
+        <a href="#"><i class="fa fa-facebook"></i></a>
+        <a href="#"><i class="fa fa-twitter"></i></a>
+        <a href="#"><i class="fa fa-linkedin"></i></a>
+        <a href="#"><i class="fa fa-github"></i></a>
+    </div>
+
+    <div class="footer-left">
+        <p class="footer-links">
+            <a class="link-1" href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Faq</a>
+            <a href="mailto:m307624@alunos.ipb.pt">Contact</a>
+        </p>
+
+        <p>MonkeyLand S.A &copy; 2022</p>
+    </div>
+</footer>
+
+</body>
+
+</html>
